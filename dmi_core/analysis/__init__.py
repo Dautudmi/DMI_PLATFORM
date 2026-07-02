@@ -1,0 +1,1 @@
+from dmi_core.analysis.financial_analysis import FinancialAnalysis

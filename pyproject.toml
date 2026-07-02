@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dmi-framework"
+version = "1.0.0"
+description = "DMI Investment Framework"
+authors = [
+    {name = "Đức Mạnh"}
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "openpyxl",
+    "xlsxwriter",
+    "requests",
+    "python-telegram-bot"
+]
+
+[tool.setuptools]
+packages = ["dmi_core"]
