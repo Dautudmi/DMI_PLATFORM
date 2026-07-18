@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dmi-framework"
-version = "1.0.0"
-description = "DMI Investment Framework"
+version = "2.3.0"
+description = "DMI Financial Intelligence Platform"
 authors = [
     {name = "Đức Mạnh"}
 ]
@@ -20,5 +20,10 @@ dependencies = [
     "python-telegram-bot"
 ]
 
-[tool.setuptools]
-packages = ["dmi_core"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dmi_core*", "apps*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

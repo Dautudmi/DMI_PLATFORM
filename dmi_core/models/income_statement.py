@@ -37,5 +37,8 @@ class IncomeStatement:
     tax_expense: Optional[float] = None
     net_profit: Optional[float] = None
 
+    # Operating metric
+    ebitda: Optional[float] = None
+    
     # Per share
     eps: Optional[float] = None
